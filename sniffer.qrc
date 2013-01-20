@@ -1,0 +1,17 @@
+<RCC>
+<qresource>
+    <file>res/images/new.png</file>
+    <file>res/images/open.png</file>
+    <file>res/images/save.png</file>
+    <file>res/images/print.png</file>
+    <file>res/images/begin.png</file>
+    <file>res/images/end.png</file>
+    <file>res/images/filter.png</file>
+    <file>res/images/findqq.png</file>
+    <file>res/images/setting.png</file>
+    <file>res/images/about.png</file>
+    <file>res/images/aboutqt.png</file>
+    <file>res/ico/main.png</file>
+    <file>res/ico/main.ico</file>
+</qresource>
+</RCC>
