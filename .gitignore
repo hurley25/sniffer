@@ -2,6 +2,20 @@
 *.slo
 *.lo
 *.o
+*.obj
+
+# The Item files
+*.pro
+*.pdb
+debug
+release
+Makefile
+Makefile.Release
+Makefile.Debug
+
+# The Program files
+sniffer
+sniffer.exe
 
 # Compiled Dynamic libraries
 *.so
