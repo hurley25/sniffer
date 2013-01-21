@@ -19,8 +19,13 @@
 
 #include <QMainWindow>
 
+// 使用到的类的前置声明 P.S.在头文件里包含另一个大的头文件不是什么好的风格
 class QAction;
 class QLabel;
+class QSplitter;
+class QTextEdit;
+class QTreeView;
+class QStandardItemModel;
 
 class MainWindow : public QMainWindow
 {
@@ -39,6 +44,7 @@ private slots:
 	void about();
 
 private:
+	void createMainWeiget();		// 创建主窗口
 	void createActions();			// 创建动作
 	void createMenus();				// 创建主菜单
 	void createContextMenu();		// 创建程序界面菜单
@@ -46,6 +52,16 @@ private:
 	void createStatusBar();			// 创建状态栏
 
 	bool isToContinue();			// 询问是否继续
+
+	QSplitter *rightSplitter;		// 右边的切分窗口
+	QSplitter *mainSplitter;		// 总体的切分窗口
+
+	QStandardItemModel *mainModel;	// 捕获的数据包列表树的模式
+
+	QTreeView *mainTreeView;		// 捕获的数据包列表
+	QTreeView *explainTreeView;		// 捕获数据的解析
+
+	QTextEdit *originalEdit;		// 捕获的原始数据包
 
 	QLabel *statusLabel;			// 状态栏文本					
 	
