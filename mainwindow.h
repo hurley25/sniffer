@@ -30,6 +30,8 @@ public:
 	MainWindow();
 	~MainWindow();
 
+	void sleep(unsigned int msec);	// ÑÓÊ±º¯Êý
+
 protected:
 	void closeEvent(QCloseEvent *event);
 
