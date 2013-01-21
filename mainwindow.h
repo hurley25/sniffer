@@ -20,6 +20,7 @@
 #include <QMainWindow>
 
 class QAction;
+class QLabel;
 
 class MainWindow : public QMainWindow
 {
@@ -40,7 +41,11 @@ private:
 	void createMenus();				// 创建主菜单
 	void createContextMenu();		// 创建程序界面菜单
 	void createToolBars();			// 创建工具栏
+	void createStatusBar();			// 创建状态栏
+
 	bool isToContinue();			// 询问是否继续
+
+	QLabel *statusLabel;			// 状态栏文本					
 	
 	QMenu *fileMenu;				// 主菜单-文件子菜单指针
 	QMenu *toolsMenu;				// 主菜单-工具子菜单指针
