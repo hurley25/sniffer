@@ -25,6 +25,7 @@ class QLabel;
 class QSplitter;
 class QTextEdit;
 class QTreeView;
+class ListTreeView;
 class QStandardItemModel;
 
 class MainWindow : public QMainWindow
@@ -75,9 +76,7 @@ private:
 	QSplitter *rightSplitter;		// 右边的切分窗口
 	QSplitter *mainSplitter;		// 总体的切分窗口
 
-	QStandardItemModel *mainModel;	// 捕获的数据包列表树的模式
-
-	QTreeView *mainTreeView;		// 捕获的数据包列表
+	ListTreeView *mainTreeView;		// 捕获的数据包列表
 	QTreeView *explainTreeView;		// 捕获数据的解析
 
 	QTextEdit *originalEdit;		// 捕获的原始数据包
