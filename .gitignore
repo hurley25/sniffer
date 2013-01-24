@@ -5,14 +5,17 @@
 *.obj
 
 # The Item files
-*.pro
-*.pdb
+
+winpcap
+
 debug
 release
+
 Makefile
 Makefile.Release
 Makefile.Debug
-clean.bat
+*.pdb
+*.bat
 
 # The Program files
 sniffer
@@ -23,6 +26,7 @@ sniffer.exe
 *.dylib
 
 # Compiled Static libraries
+*.lib
 *.lai
 *.la
 *.a
