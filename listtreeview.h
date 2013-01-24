@@ -20,6 +20,7 @@
 #include <QTreeView>
 
 class QStandardItemModel;
+class QString;
 
 class ListTreeView : public QTreeView
 {
@@ -32,8 +33,12 @@ public:
 	void rebuildInfo();
 	bool isChanged();
 
+	void addOneCaptureItem(const char *szNum, const char *szTime, const char *szSIP, 
+							const char *szDIP, const char *szProto, const char *szLength);
+
 private:
 	QStandardItemModel *mainModel;
+	int iPosition;
 };
 
 #endif // LISTTREEVIEW_H_
