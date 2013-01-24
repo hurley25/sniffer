@@ -12,6 +12,7 @@ release
 Makefile
 Makefile.Release
 Makefile.Debug
+clean.bat
 
 # The Program files
 sniffer
