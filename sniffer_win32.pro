@@ -2,7 +2,7 @@
 # 
 #       Filename:  sniffer_win32.pro
 #
-#    Description:  为 Win32 环境书写的Qt项目文件
+#    Description:  为 Win32 环境书写的 Qt 项目文件
 #
 #        Created:  2013年01月24日 14时05分02秒
 #
@@ -16,8 +16,10 @@ TARGET =
 DEPENDPATH += .
 INCLUDEPATH += .
 INCLUDEPATH += winpcap
+RC_FILE = logo.rc
 
 # Input
 HEADERS += csniffer.h listtreeview.h mainwindow.h sniffertype.h
 SOURCES += csniffer.cpp listtreeview.cpp main.cpp mainwindow.cpp
 RESOURCES += sniffer.qrc
+
