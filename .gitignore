@@ -5,6 +5,7 @@
 *.obj
 
 # The Item files
+ui_*
 
 winpcap
 
@@ -14,6 +15,7 @@ release
 Makefile
 Makefile.Release
 Makefile.Debug
+*.suo
 *.pdb
 *.bat
 

@@ -21,19 +21,21 @@
 
 #include "ui_choosedevdialog.h"
 
+class Sniffer;
+
 class ChooseDevDialog : public QDialog, public Ui::ChooseDevDialog
 {
 	Q_OBJECT
 
 public:
     ChooseDevDialog(QWidget *parent = 0);
+    
+    void addNetDevInfo();
 
-    void addNetNevInfo();
+    Sniffer *sniffer;
 
 private slots:
 	void helpDialog();
-
-
 };
 
 #endif	// CHOOSEDEVDIALOG_H

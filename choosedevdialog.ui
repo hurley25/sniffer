@@ -6,39 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>461</width>
-    <height>353</height>
+    <width>522</width>
+    <height>417</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>选择网络适配器</string>
   </property>
-  <widget class="QListWidget" name="netDevListWidget">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>30</y>
-     <width>421</width>
-     <height>251</height>
-    </rect>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>0</width>
-     <height>0</height>
-    </size>
-   </property>
-   <property name="viewMode">
-    <enum>QListView::ListMode</enum>
-   </property>
-  </widget>
   <widget class="QGroupBox" name="netDevsGroupBox">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>441</width>
-     <height>301</height>
+     <width>501</width>
+     <height>361</height>
     </rect>
    </property>
    <property name="title">
@@ -47,8 +28,8 @@
    <widget class="QCheckBox" name="PromiscuousCheckBox">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>280</y>
+      <x>30</x>
+      <y>340</y>
       <width>131</width>
       <height>16</height>
      </rect>
@@ -63,8 +44,8 @@
    <widget class="QCheckBox" name="beginCheckBox">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>280</y>
+      <x>270</x>
+      <y>340</y>
       <width>131</width>
       <height>16</height>
      </rect>
@@ -73,12 +54,22 @@
      <string>确定后直接开始捕获</string>
     </property>
    </widget>
+   <widget class="QListWidget" name="netDevListWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>481</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>320</y>
+     <x>60</x>
+     <y>380</y>
      <width>393</width>
      <height>25</height>
     </rect>
@@ -116,12 +107,8 @@
     </item>
    </layout>
   </widget>
-  <zorder>layoutWidget</zorder>
-  <zorder>netDevListWidget</zorder>
-  <zorder>netDevsGroupBox</zorder>
  </widget>
  <tabstops>
-  <tabstop>netDevListWidget</tabstop>
   <tabstop>PromiscuousCheckBox</tabstop>
   <tabstop>buttonBox</tabstop>
   <tabstop>helpButton</tabstop>
