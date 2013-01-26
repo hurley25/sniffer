@@ -51,6 +51,7 @@ private slots:
     void save();
     void print();
 	
+	void chooseDev();
 	void begin();
 	void end();
 	void findQQ();
@@ -108,6 +109,7 @@ private:
 	QAction *printAction;			// 打印当前捕获的数据
 	QAction *exitAction;			// 退出程序
 
+	QAction *chooseDevAction;		// 选择打开的网卡
 	QAction *beginAction;			// 开始捕获
 	QAction *endAction;				// 停止捕获
 	QAction *findQQAction;			// 捕获QQ信息
