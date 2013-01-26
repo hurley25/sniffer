@@ -77,7 +77,6 @@ private:
 	void setCurrentFile(const QString &fileName);	// 设置当前打开文件
 
 	CaptureThread *captureThread;	// 数据捕获线程
-	bool bCaptureStart;				// 是否开始捕获
 
 	Sniffer *sniffer;				// 数据捕获类
 
