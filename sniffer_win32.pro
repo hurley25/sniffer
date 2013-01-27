@@ -19,12 +19,14 @@ INCLUDEPATH += winpcap
 
 # Input
 HEADERS += csniffer.h listtreeview.h mainwindow.h sniffertype.h \
-			sniffer.h capturethread.h choosedevdialog.h settinginfo.h
+			sniffer.h capturethread.h choosedevdialog.h settinginfo.h \
+			findqqdialog.h
 
 SOURCES += csniffer.cpp listtreeview.cpp main.cpp mainwindow.cpp \
-			sniffer.cpp capturethread.cpp choosedevdialog.cpp
+			sniffer.cpp capturethread.cpp choosedevdialog.cpp	\
+			findqqdialog.cpp
 
-FORMS += choosedevdialog.ui
+FORMS += choosedevdialog.ui findqqdialog.ui
 
 RESOURCES += sniffer.qrc
 RC_FILE = logo.rc
