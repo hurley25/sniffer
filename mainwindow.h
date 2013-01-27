@@ -115,7 +115,6 @@ private:
 	QAction *endAction;				// 停止捕获
 	QAction *findQQAction;			// 捕获QQ信息
 	QAction *filterAction;			// 设置过滤器
-	QAction *setAction;				// 全局设置
 
 	QAction *aboutAction;			// 关本于程序
 	QAction *aboutQtAction;			// 关于Qt
