@@ -19,7 +19,7 @@ INCLUDEPATH += winpcap
 
 # Input
 HEADERS += csniffer.h listtreeview.h mainwindow.h sniffertype.h \
-			sniffer.h capturethread.h choosedevdialog.h
+			sniffer.h capturethread.h choosedevdialog.h settinginfo.h
 
 SOURCES += csniffer.cpp listtreeview.cpp main.cpp mainwindow.cpp \
 			sniffer.cpp capturethread.cpp choosedevdialog.cpp

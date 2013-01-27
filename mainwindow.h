@@ -20,8 +20,8 @@
 #include <QMainWindow>
 
 #include "capturethread.h"
+#include "settinginfo.h"
 
-// 使用到的类的前置声明 P.S.在头文件里包含另一个大的头文件不是什么好的风格
 class QAction;
 class QLabel;
 class QSplitter;
@@ -75,6 +75,8 @@ private:
 	bool loadFile(const QString &fileName);			// 载入捕获文件
 	bool saveFile(const QString &fileName);			// 保存捕获文件
 	void setCurrentFile(const QString &fileName);	// 设置当前打开文件
+
+	SettingInfo *settingInfo;
 
 	CaptureThread *captureThread;	// 数据捕获线程
 
