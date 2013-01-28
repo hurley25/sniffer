@@ -76,7 +76,7 @@ private:
 	bool saveFile(const QString &fileName);			// 保存捕获文件
 	void setCurrentFile(const QString &fileName);	// 设置当前打开文件
 
-	SettingInfo *settingInfo;
+	SettingInfo *settingInfo;		// 程序全局设置
 
 	CaptureThread *captureThread;	// 数据捕获线程
 

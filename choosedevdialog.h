@@ -34,16 +34,20 @@ public:
 
 	void addNetDevInfo();
 
-	Sniffer *sniffer;
-	int iOpenDevNum;
-	bool bPromiscuous;
-	bool bAutoBegin;
+	Sniffer 	*sniffer;
+	int 		iOpenDevNum;
+	bool 		bPromiscuous;
+	bool 		bAutoBegin;
+	int	 		iDataLimit;
+	std::string	filterString;
 
 private slots:
 	void helpDialog();
 	void setChoose(QListWidgetItem *changedElem);
 	void setPromiscuousFlag(int flag);
 	void setAutoBeginFlag(int flag);
+	void setDataLimitValue(int iValue);
+	void setFilterString(int index);
 
 private:
 	std::vector<QListWidgetItem *> devItemVector;
