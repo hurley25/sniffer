@@ -19,7 +19,14 @@
 
 #include <QDialog>
 
+#include <string>
+#include <map>
+
 #include "ui_findqqdialog.h"
+#include "findqqthread.h"
+
+class MainWindow;
+class Sniffer;
 
 class FindQQDialog : public QDialog, public Ui::FindQQDialog
 {
@@ -27,9 +34,29 @@ class FindQQDialog : public QDialog, public Ui::FindQQDialog
 
 public:
 	FindQQDialog(QWidget *parent = 0);
+	FindQQDialog(QWidget *parent, MainWindow *window);
+
+	void addOneFindInfo(const char *szFirstTime, const char *szLastTime, const char *szSIP,
+									 const char *szDIP, const char *szQQ, const char *szSum);
+	
+	void changeOneInfoNum(const char *szLastTime, const char *szQQ, const char *szSum);
+
+	Sniffer *sniffer;
+
+protected:
+	void closeEvent(QCloseEvent *event);
 
 private slots:
+	void beginFind();
+	void endFind();
 	void showHelpInfo();
+
+private:
+	FindQQThread  *findQQThread;
+	MainWindow    *mainwindow;
+
+	typedef std::map<std::string, QTreeWidgetItem *> ItemMaptype;
+	ItemMaptype	  itemMap;
 };
 
 #endif	// FINDQQDIALOG_H_

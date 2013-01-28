@@ -22,6 +22,13 @@
 #include "capturethread.h"
 #include "settinginfo.h"
 
+#ifndef PCAP_OPENFLAG_PROMISCUOUS
+	// Defines if the adapter has to go in promiscuous mode. 
+	#define PCAP_OPENFLAG_PROMISCUOUS  		1
+	// Defines if the local adapter will capture its own generated traffic.
+	#define PCAP_OPENFLAG_NOCAPTURE_LOCAL   8
+#endif
+
 class QAction;
 class QLabel;
 class QSplitter;
@@ -34,13 +41,13 @@ class MainWindow : public QMainWindow
 {
 	Q_OBJECT
 
-	friend class CaptureThread;
-
 public:
 	MainWindow();
 	~MainWindow();
 
 	void sleep(unsigned int msec);	// 延时函数
+
+	SettingInfo *settingInfo;		// 程序全局设置
 
 protected:
 	void closeEvent(QCloseEvent *event);
@@ -55,8 +62,6 @@ private slots:
 	void begin();
 	void end();
 	void findQQ();
-	void filter();
-	void set();
 
 	void about();
 
@@ -76,11 +81,10 @@ private:
 	bool saveFile(const QString &fileName);			// 保存捕获文件
 	void setCurrentFile(const QString &fileName);	// 设置当前打开文件
 
-	SettingInfo *settingInfo;		// 程序全局设置
-
 	CaptureThread *captureThread;	// 数据捕获线程
 
 	Sniffer *sniffer;				// 数据捕获类
+	friend class FindQQDialog;
 
 	QString curFile;				// 当前打开文件
 

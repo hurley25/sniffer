@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>371</width>
-    <height>332</height>
+    <width>849</width>
+    <height>459</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,36 +16,87 @@
   <property name="sizeGripEnabled">
    <bool>false</bool>
   </property>
-  <widget class="QListWidget" name="findListWidget">
+  <widget class="QTreeWidget" name="findTreeWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>30</y>
-     <width>351</width>
-     <height>251</height>
+     <width>821</width>
+     <height>371</height>
     </rect>
    </property>
+   <column>
+    <property name="text">
+     <string>首次捕获时间</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>最后捕获时间</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>来源 IP 地址</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>目标 IP 地址</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>QQ号码</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>捕获次数</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+    </property>
+   </column>
   </widget>
   <widget class="QPushButton" name="beginPushButton">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>300</y>
+     <x>310</x>
+     <y>420</y>
      <width>75</width>
-     <height>23</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>开始捕获</string>
    </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QPushButton" name="endPushButton">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>300</y>
+     <x>440</x>
+     <y>420</y>
      <width>75</width>
-     <height>23</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -55,10 +106,10 @@
   <widget class="QPushButton" name="exitPushButton">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>300</y>
+     <x>730</x>
+     <y>420</y>
      <width>75</width>
-     <height>23</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -68,14 +119,14 @@
   <widget class="QPushButton" name="infoPushButton">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>300</y>
+     <x>50</x>
+     <y>420</y>
      <width>75</width>
-     <height>23</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>程序简介</string>
+    <string>工具简介</string>
    </property>
   </widget>
   <widget class="QGroupBox" name="groupBox">
@@ -83,15 +134,28 @@
     <rect>
      <x>0</x>
      <y>10</y>
-     <width>371</width>
-     <height>281</height>
+     <width>841</width>
+     <height>401</height>
     </rect>
    </property>
    <property name="title">
     <string>捕获结果：</string>
    </property>
   </widget>
+  <zorder>groupBox</zorder>
+  <zorder>findTreeWidget</zorder>
+  <zorder>beginPushButton</zorder>
+  <zorder>endPushButton</zorder>
+  <zorder>exitPushButton</zorder>
+  <zorder>infoPushButton</zorder>
  </widget>
+ <tabstops>
+  <tabstop>infoPushButton</tabstop>
+  <tabstop>beginPushButton</tabstop>
+  <tabstop>endPushButton</tabstop>
+  <tabstop>exitPushButton</tabstop>
+  <tabstop>findTreeWidget</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>

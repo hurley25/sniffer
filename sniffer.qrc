@@ -13,6 +13,8 @@
     <file>res/images/about.png</file>
     <file>res/images/aboutqt.png</file>
     <file>res/images/startlogo.png</file>
+    <file>res/images/computer.png</file>
+    <file>res/images/qq.png</file>
     <file>res/ico/main.png</file>
     <file>res/ico/main.ico</file>
 </qresource>
