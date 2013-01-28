@@ -96,12 +96,10 @@ private:
 	
 	QMenu *fileMenu;				// 主菜单-文件子菜单指针
 	QMenu *toolsMenu;				// 主菜单-工具子菜单指针
-	QMenu *optionsMenu;				// 主菜单-选项子菜单指针
 	QMenu *helpMenu;				// 主菜单-帮助子菜单指针
 
 	QToolBar *fileToolBar;			// 文件相关工具栏指针
 	QToolBar *workToolBar;			// 捕获相关工具栏指针
-	QToolBar *setToolBar;			// 设置相关工具栏指针
 	QToolBar *infoToolBar;			// 帮助相关工具栏指针
 
 	QAction *newAction;				// 创建一个新的捕获（清空历史）
@@ -114,7 +112,6 @@ private:
 	QAction *beginAction;			// 开始捕获
 	QAction *endAction;				// 停止捕获
 	QAction *findQQAction;			// 捕获QQ信息
-	QAction *filterAction;			// 设置过滤器
 
 	QAction *aboutAction;			// 关本于程序
 	QAction *aboutQtAction;			// 关于Qt

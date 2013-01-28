@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>522</width>
-    <height>417</height>
+    <height>477</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,42 +19,13 @@
      <x>10</x>
      <y>10</y>
      <width>501</width>
-     <height>361</height>
+     <height>341</height>
     </rect>
    </property>
    <property name="title">
     <string>网络适配器列表</string>
    </property>
-   <widget class="QCheckBox" name="PromiscuousCheckBox">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>340</y>
-      <width>131</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>使用混杂模式打开</string>
-    </property>
-    <property name="checked">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="beginCheckBox">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>340</y>
-      <width>131</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>确定后直接开始捕获</string>
-    </property>
-   </widget>
-   <widget class="QListWidget" name="netDevListWidget">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -63,18 +34,151 @@
       <height>311</height>
      </rect>
     </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QListWidget" name="netDevListWidget"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QCheckBox" name="PromiscuousCheckBox">
+         <property name="text">
+          <string>使用混杂模式打开</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="beginCheckBox">
+         <property name="text">
+          <string>确定后直接开始捕获</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="filterCheckBox">
+         <property name="text">
+          <string>启用过滤设置</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </widget>
   </widget>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>10</x>
+     <y>360</y>
+     <width>491</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>数据包过滤设置</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
      <y>380</y>
-     <width>393</width>
-     <height>25</height>
+     <width>461</width>
+     <height>22</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>捕获的协议</string>
+      </property>
+      <property name="buddy">
+       <cstring>comboBox</cstring>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox"/>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>28</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>捕获数据包最大限制</string>
+      </property>
+      <property name="buddy">
+       <cstring>spinBox</cstring>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="spinBox"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>bytes</string>
+      </property>
+      <property name="buddy">
+       <cstring>spinBox</cstring>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>430</y>
+     <width>461</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
      <widget class="QPushButton" name="helpButton">
       <property name="text">
@@ -107,11 +211,24 @@
     </item>
    </layout>
   </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>spinBox</zorder>
+  <zorder>label_3</zorder>
+  <zorder>horizontalSpacer_2</zorder>
+  <zorder>netDevsGroupBox</zorder>
+  <zorder>groupBox</zorder>
  </widget>
  <tabstops>
+  <tabstop>netDevListWidget</tabstop>
   <tabstop>PromiscuousCheckBox</tabstop>
-  <tabstop>buttonBox</tabstop>
+  <tabstop>beginCheckBox</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>spinBox</tabstop>
   <tabstop>helpButton</tabstop>
+  <tabstop>buttonBox</tabstop>
  </tabstops>
  <resources/>
  <connections>
