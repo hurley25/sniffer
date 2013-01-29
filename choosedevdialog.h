@@ -23,7 +23,8 @@
 
 #include "ui_choosedevdialog.h"
 
-class Sniffer;
+class  Sniffer;
+struct SettingInfo;
 
 class ChooseDevDialog : public QDialog, public Ui::ChooseDevDialog
 {
@@ -31,10 +32,12 @@ class ChooseDevDialog : public QDialog, public Ui::ChooseDevDialog
 
 public:
 	ChooseDevDialog(QWidget *parent = 0);
+	ChooseDevDialog(Sniffer *sni, QWidget *parent = 0);
+
+	void GetUserSet(SettingInfo *settingInfo);
 
 	void addNetDevInfo();
 
-	Sniffer 	*sniffer;
 	int 		iOpenDevNum;
 	bool 		bPromiscuous;
 	bool 		bAutoBegin;
@@ -51,6 +54,7 @@ private slots:
 
 private:
 	std::vector<QListWidgetItem *> devItemVector;
+	Sniffer 	*sniffer;
 };
 
 #endif	// CHOOSEDEVDIALOG_H

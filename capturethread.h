@@ -27,16 +27,18 @@ class  CaptureThread : public QThread
 
 public:
 	CaptureThread();
-	void stop();
+	CaptureThread(ListTreeView *pTree, Sniffer *pSniffer, QString tmpFileName = "");
 
-	ListTreeView *mainTree;
-	Sniffer *sniffer;
+	void stop();
 
 protected:
 	void run();
 
 private:
 	volatile bool bStopped;
+	ListTreeView  *mainTree;
+	Sniffer       *sniffer;
+	QString		  tmpFile;
 };
 
 #endif	// CAPTURETHREAD_H_
