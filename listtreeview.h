@@ -26,6 +26,8 @@ class ListTreeView : public QTreeView
 {
 	Q_OBJECT
 
+	friend class MainWindow;
+
 public:
 	ListTreeView();
 	~ListTreeView();

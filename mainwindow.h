@@ -37,6 +37,7 @@ class QTreeView;
 class ListTreeView;
 class QStandardItemModel;
 class QTemporaryFile;
+class QModelIndex;
 
 class MainWindow : public QMainWindow
 {
@@ -65,6 +66,8 @@ private slots:
 	void findQQ();
 
 	void about();
+
+	void addRawDataToEdit(const QModelIndex &mode);
 
 private:
 	void createMainWeiget();		// 创建主窗口
