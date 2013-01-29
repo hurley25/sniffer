@@ -20,13 +20,12 @@
 #include <QTreeView>
 
 class QStandardItemModel;
+class QModelIndex;
 class QString;
 
 class ListTreeView : public QTreeView
 {
 	Q_OBJECT
-
-	friend class MainWindow;
 
 public:
 	ListTreeView();
@@ -37,6 +36,8 @@ public:
 
 	void addOneCaptureItem(const char *szNum, const char *szTime, const char *szSIP, 
 							const char *szDIP, const char *szProto, const char *szLength);
+
+	void getOrderNumber(QModelIndex &index, QString &strNumber);
 
 private:
 	QStandardItemModel *mainModel;
