@@ -36,6 +36,7 @@ class QTextEdit;
 class QTreeView;
 class ListTreeView;
 class QStandardItemModel;
+class QTemporaryFile;
 
 class MainWindow : public QMainWindow
 {
@@ -75,7 +76,7 @@ private:
 	void readSettings();			// 读取配置文件
 	void writeSettings();			// 写入配置文件
 
-	bool isToContinue();			// 询问是否继续
+	int isToContinue();				// 询问是否继续
 
 	bool loadFile(const QString &fileName);			// 载入捕获文件
 	bool saveFile(const QString &fileName);			// 保存捕获文件
