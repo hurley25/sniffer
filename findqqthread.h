@@ -27,16 +27,17 @@ class  FindQQThread : public QThread
 
 public:
 	FindQQThread();
+	FindQQThread(FindQQDialog *findQQ, Sniffer *sni);
+	
 	void stop();
-
-	FindQQDialog *findQQDialog;
-	Sniffer *sniffer;
 
 protected:
 	void run();
 
 private:
 	volatile bool bStopped;
+	FindQQDialog  *findQQDialog;
+	Sniffer 	  *sniffer;
 };
 
 #endif	// FINDQQTHREAD_H_
