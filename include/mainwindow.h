@@ -19,15 +19,7 @@
 
 #include <QMainWindow>
 
-#include "capturethread.h"
 #include "settinginfo.h"
-
-#ifndef PCAP_OPENFLAG_PROMISCUOUS
-	// Defines if the adapter has to go in promiscuous mode. 
-	#define PCAP_OPENFLAG_PROMISCUOUS  		1
-	// Defines if the local adapter will capture its own generated traffic.
-	#define PCAP_OPENFLAG_NOCAPTURE_LOCAL   8
-#endif
 
 class QAction;
 class QLabel;
@@ -38,6 +30,9 @@ class ListTreeView;
 class QStandardItemModel;
 class QTemporaryFile;
 class QItemSelection;
+
+class CaptureThread;
+class Sniffer;
 
 class MainWindow : public QMainWindow
 {
@@ -68,6 +63,7 @@ private slots:
 	void about();
 
 	void addRawDataToEdit(const QItemSelection &nowSelect);
+	void addDataToTree(const QItemSelection &nowSelect);
 
 private:
 	void createMainWeiget();		// 创建主窗口
