@@ -25,12 +25,12 @@ class QAction;
 class QLabel;
 class QSplitter;
 class QTextEdit;
-class QTreeView;
 class ListTreeView;
 class QStandardItemModel;
 class QTemporaryFile;
 class QItemSelection;
 
+class ProtoTreeView;
 class CaptureThread;
 class Sniffer;
 
@@ -92,7 +92,7 @@ private:
 	QSplitter *mainSplitter;		// 总体的切分窗口
 
 	ListTreeView *mainTreeView;		// 捕获的数据包列表
-	QTreeView *explainTreeView;		// 捕获数据的解析
+	ProtoTreeView *explainTreeView;	// 捕获数据的解析
 
 	QTextEdit *originalEdit;		// 捕获的原始数据包
 
