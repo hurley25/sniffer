@@ -28,6 +28,7 @@ sniffer.exe
 *.dylib
 
 # Compiled Static libraries
+lib
 *.lib
 *.lai
 *.la

@@ -17,5 +17,6 @@
     <file>res/images/qq.png</file>
     <file>res/ico/main.png</file>
     <file>res/ico/main.ico</file>
+    <file>res/language/qt_zh_CN.qm</file>
 </qresource>
 </RCC>
