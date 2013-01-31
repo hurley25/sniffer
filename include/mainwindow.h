@@ -62,8 +62,7 @@ private slots:
 
 	void about();
 
-	void addRawDataToEdit(const QItemSelection &nowSelect);
-	void addDataToTree(const QItemSelection &nowSelect);
+	void addDataToWidget(const QItemSelection &nowSelect);
 
 private:
 	void createMainWeiget();		// 创建主窗口

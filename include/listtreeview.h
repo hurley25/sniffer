@@ -34,8 +34,8 @@ public:
 	void rebuildInfo();
 	bool isChanged();
 
-	void addOneCaptureItem(const char *szNum, const char *szTime, const char *szSIP, 
-							const char *szDIP, const char *szProto, const char *szLength);
+	void addOneCaptureItem(QString strNum, QString strTime, QString strSIP, 
+								QString strDIP, QString strProto, QString strLength);
 
 	void getOrderNumber(QModelIndex &index, QString &strNumber);
 
