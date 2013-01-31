@@ -33,7 +33,7 @@ public:
 	~ProtoTreeView();
 
 	void rebuildInfo();
-	void ShowTreeAnalyseInfo(SnifferData *snifferData);
+	void ShowTreeAnalyseInfo(const SnifferData *snifferData);
 
 private:
 	QStandardItemModel *mainModel;
