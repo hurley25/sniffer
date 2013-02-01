@@ -93,6 +93,7 @@ private:
 	ListTreeView *mainTreeView;		// 捕获的数据包列表
 	ProtoTreeView *explainTreeView;	// 捕获数据的解析
 
+	QTextEdit *explainEdit;			// 应用层数据解析
 	QTextEdit *originalEdit;		// 捕获的原始数据包
 
 	QLabel *statusLabel;			// 状态栏文本					
