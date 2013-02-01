@@ -16,7 +16,7 @@
 #ifndef CAPTURETHREAD_H_
 #define CAPTURETHREAD_H_
 
-#include <QThread.h>
+#include <QThread>
 
 class ListTreeView;
 class Sniffer;

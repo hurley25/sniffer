@@ -16,7 +16,7 @@
 #ifndef FINDQQTHREAD_H_
 #define FINDQQTHREAD_H_
 
-#include <QThread.h>
+#include <QThread>
 
 class FindQQDialog;
 class Sniffer;
