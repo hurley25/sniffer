@@ -18,7 +18,7 @@ INCLUDEPATH += .
 
 # Input
 
-LIBS += lpcap
+LIBS += -lpcap
 
 HEADERS +=  include/csniffer.h include/listtreeview.h include/mainwindow.h include/sniffertype.h \
 			include/sniffer.h include/capturethread.h include/choosedevdialog.h include/settinginfo.h \

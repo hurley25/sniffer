@@ -6,6 +6,8 @@
 
 # The Item files
 ui_*
+moc_*
+qrc_*
 
 winpcap
 
@@ -20,7 +22,8 @@ Makefile.Debug
 *.bat
 
 # The Program files
-sniffer
+Sniffer.ini
+sniffer_linux
 sniffer.exe
 
 # Compiled Dynamic libraries
