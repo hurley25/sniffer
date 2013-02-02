@@ -13,6 +13,7 @@
 //        Company:  Class 1107 of Computer Science and Technology
 // 
 // =====================================================================================
+
 #ifndef CAPTURETHREAD_H_
 #define CAPTURETHREAD_H_
 

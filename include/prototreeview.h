@@ -39,4 +39,4 @@ private:
 	QStandardItemModel *mainModel;
 };
 
-#endif	PROTOTREEVIEW_H_
+#endif	// PROTOTREEVIEW_H_

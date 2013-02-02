@@ -23,8 +23,8 @@
 #include <map>
 
 #include "ui_findqqdialog.h"
-#include "findqqthread.h"
 
+class FindQQThread;
 class MainWindow;
 class Sniffer;
 
