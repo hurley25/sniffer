@@ -4,3 +4,7 @@ A Simple WireShark Like Network Packet Capture Software constructed with libpcap
 
 ### only support Linux  and macOS
 
+![](./res/preview.png)
+
+
+
