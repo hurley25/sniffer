@@ -3,12 +3,13 @@
 *.lo
 *.o
 *.obj
-
+*.autosave
 # The Item files
 ui_*
 moc_*
 qrc_*
-
+*.pro.user.*
+*.pro.user
 winpcap
 
 debug
@@ -29,7 +30,7 @@ sniffer.exe
 # Compiled Dynamic libraries
 *.so
 *.dylib
-
+.DS_Store
 # Compiled Static libraries
 lib
 *.lib
