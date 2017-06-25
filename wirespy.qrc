@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/images/new.png</file>
+        <file>res/images/open.png</file>
+        <file>res/images/save.png</file>
+        <file>res/images/corporation.png</file>
+        <file>res/images/begin.png</file>
+        <file>res/images/end.png</file>
+        <file>res/images/filter.png</file>
+        <file>res/images/about.png</file>
+        <file>res/images/startlogo.png</file>
+        <file>res/ico/main.png</file>
+        <file>res/ico/main.ico</file>
+        <file>res/images/wifi.png</file>
+    </qresource>
+</RCC>
